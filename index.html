@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100&family=Roboto+Condensed:wght@300&display=swap" rel="stylesheet">
+  <title>Drakōn Web</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" href="favi.png">
+</head>
+<body>
+  <section class="pai">
+    <div class="sid">
+      <div class="sidebar">
+        <img src="favi.png" alt="Devs4Freela">
+        <h1>Drakōn Web Soluções</h1>
+        <nav>
+          <a href="#hero">Início</a>
+          <a href="#sobre-nós">Sobre Nós</a>
+          <a href="#portfolio">Portfolio</a>
+          <a href="#contato">Contato</a>
+        </nav>
+        <button><a href="https://wa.me/+5522992010034" >Enviar via WhatsApp</a></button>
+        
+        <div class="social-media">
+        </div>
+      </div>
+      
+    </div>
+
+    <button class="hamburger" id="hamburger">
+      &#9776;
+    </button>
+  
+    <main>
+      
+      <section id="hero" class="hero">
+          <div class="hero-text">
+            <h2>Bem-vindo</h2>
+            <span class="digita">Criação de Landing page, Sites e Sistemas</span>
+            <button class="btn"><a href="https://wa.me/+5522992010034" >Contate-me</a></button>
+          </div>
+      </section>
+
+      <section>
+          <div class="sobre-nos" id="sobre-nós">
+            <h2>Sobre Nós</h2>
+          </div>
+      </section>
+      
+      <section id="o-que-eu-faco">
+        <h2>O que fazemos</h2>
+        <div class="services">
+          <div class="service">
+            <h3>Desenvolvimento Web</h3>
+            <p>Criação de sites e aplicações web com foco em usabilidade e performance.</p>
+          </div>
+          <div class="service">
+            <h3>Landing page</h3>
+            <p>Construção de landing pages para o marketing dos seus negócios.</p>
+          </div>
+          <div class="service">
+            <h3>Consultoria de Software</h3>
+            <p>Auxílio na escolha das melhores tecnologias e estratégias para o seu projeto.</p>
+          </div>
+        </div>
+      </section>
+
+      <section id="portfolio">
+        <h2>Portfolio</h2>
+        <div class="projects">
+          <div class="project">
+            <img src="mayara.png" alt="Projeto 1">
+            <h3>Mayara personal</h3>
+            <a href="#">Ver mais</a>
+          </div>
+          <div class="project">
+            <img src="Gustavo lima.png" alt="Projeto 1">
+            <h3>Show Gustavo Lima</h3>
+            <a href="#">Ver mais</a>  
+          </div>
+          <div class="project">
+            <img src="thais.jpg" alt="Projeto 1">
+            <h3>Thais Medeiros</h3>
+            <a href="#">Ver mais</a>
+          </div>
+          <div class="project">
+            <img src="felipe.png" alt="Projeto 1">
+            <h3>Felipe Melo</h3>
+            <a href="#">Ver mais</a>
+          </div>
+          <div class="project">
+            <img src="thermodry.png" alt="Projeto 1">
+            <h3>Thermodry</h3>
+            <a href="#">Ver mais</a>
+          </div>
+          <div class="project">
+            <img src="redfit.png" alt="Projeto 2">
+            <h3>Academia Redfit</h3>
+            <a href="#">Ver mais</a>
+          </div>
+        </div>
+      </section>
+      
+      <section id="contato">
+        <h2>Devs</h2>
+        <div class="git">
+          <div class="Caio">
+          <a href="https://github.com/CaioQuintes"><img src="caio.jpg" alt="Caio"></a>
+          </div>
+          <div class="Caio">
+            <a href="https://github.com/merlimigor"><img src="Imagem do WhatsApp de 2024-07-26 à(s) 14.26.05_27976fad.jpg" alt="Caio"></a>
+          </div>
+          <div class="Caio">
+            <a href="https://github.com/vitorpatrickmoraes"><img src="vitor.png" alt="Caio"></a>
+          </div>
+          <div class="Caio">
+            <a href="https://github.com/julimq"><img src="juliana.png" alt="Caio"></a>
+          </div>
+          <div class="Caio">
+            <a href="https://github.com/PauloVitorAzzariti?tab=repositories"><img src="paulo vitor.png" alt="Caio"></a>
+          </div>
+          <div class="Caio">
+            <a href="https://github.com/Marcostssj"><img src="Imagem do WhatsApp de 2024-07-26 à(s) 14.45.06_2a6d803c.jpg" alt="Caio"></a>
+          </div>
+        </div>
+      </section>
+
+    </main>
+  </section>
+  <script>
+    const hamburger = document.getElementById('hamburger');
+    const sidebar = document.querySelector('.sidebar');
+
+    hamburger.addEventListener('click', () => {
+      sidebar.classList.toggle('active');
+    });
+  </script>
+
+<script>
+  function typeWriter(elemento) {
+    const textoArray = elemento.innerHTML.split('');
+    elemento.innerHTML = '';
+    textoArray.forEach((letra, i) => {
+      setTimeout(() => elemento.innerHTML += letra, 75 * i);
+    });
+  }
+
+  const titulo = document.querySelector('.digita');
+  typeWriter(titulo);
+</script>
+</body>
+</html>
